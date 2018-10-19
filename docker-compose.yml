@@ -5,10 +5,10 @@ networks:
     driver: bridge
 services:
   mifosx:
-    image: fintecheando/com.mx.fintecheando.mifosx.18.03.01
+    image: com.mx.fintecheando.mifosx.18.03.01
     restart: always
     ports:
-      - 8443:8443
+      - 443:8443
     networks:
       - app-tier
     depends_on:
